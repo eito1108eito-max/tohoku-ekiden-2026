@@ -1,0 +1,493 @@
+[
+  {
+    "id": "aomori",
+    "prefecture": "青森県",
+    "event_name": "第77回 男子・女子青森県高等学校駅伝競走大会",
+    "event_date": "2026-10-29",
+    "venue": "新青森県総合運動公園陸上競技場周辺コース",
+    "status": "scheduled",
+    "distance_km": null,
+    "teams": [],
+    "sources": [
+      {
+        "title": "青森陸上競技協会 2026競技日程・大会申込",
+        "url": "https://www.jaafaomori.com/schedule/",
+        "type": "official_schedule_page",
+        "supports": "2026年10月29日に県高校駅伝を新青森県営周辺コースで開催予定と掲載。大会行には派遣依頼等の関連資料がある一方、結果リンクは未掲載。"
+      },
+      {
+        "title": "第77回 男子・女子青森県高等学校駅伝競走大会 派遣依頼",
+        "url": "http://www.jaafaomori.com/wp-content/uploads/2026/10/2b3895f103d5bfa0d25aac564b1925cb.pdf",
+        "type": "official_pdf",
+        "supports": "大会の正式表記、2026年10月29日（木）、新青森県総合運動公園陸上競技場周辺コースを明記。"
+      },
+      {
+        "title": "2026年度 青森陸上競技協会 競技日程",
+        "url": "https://www.jomon.ne.jp/~arikkyo/data/R8/2kyougi/2026Nitteikyougi.pdf",
+        "type": "official_schedule_pdf",
+        "supports": "10月29日に77/38県高校駅伝を新青森県営周辺コースで予定していることを確認。"
+      },
+      {
+        "title": "青森陸上競技協会 記録速報",
+        "url": "http://www.jaafaomori.com/wp-content/uploads/sh/index.html",
+        "type": "official_live_results_page",
+        "supports": "確認時点の公式記録速報ページは10月3日〜4日の県中学校新人陸上を表示しており、県高校駅伝の速報・結果は未掲載。"
+      }
+    ],
+    "summary": "2026年10月24日16時台JST現在、女子県予選は公式日程上2026年10月29日開催予定で未開催。したがって2026年度の女子全順位、1位・2位の学校名・タイム、合同・オープン区分は未公表であり、teamsは空配列とした。",
+    "caveats": [
+      "過年度の順位・記録は2026年度結果として使用していない。",
+      "女子のコース総距離・区間距離は確認した2026年度公式日程、派遣依頼、所属長宛文書に記載がないためnullとした。全国大会の標準距離や過年度コースから推測していない。",
+      "公式の独立した競技要項URLは確認できなかった。日程ページに掲載された派遣依頼PDFは役員派遣文書であり、要項とは区別した。",
+      "2026年10月24日16時台JSTの公式日程ページでは県高校駅伝の結果URLは未掲載。"
+    ],
+    "report_path": "/home/ubuntu/research/aomori.md",
+    "json_path": "/home/ubuntu/research/aomori.json",
+    "is_partial_result": false
+  },
+  {
+    "id": "iwate",
+    "prefecture": "岩手県",
+    "event_name": "女子第38回全国高校駅伝競走大会岩手県予選会兼第43回県高校女子駅伝競走大会",
+    "event_date": "2026-10-21",
+    "venue": "花巻市特設高校駅伝コース（日居城野運動公園陸上競技場発着）",
+    "status": "verified_result",
+    "distance_km": 21.0975,
+    "teams": [
+      {
+        "rank": 1,
+        "school": "花巻東",
+        "time": "01:13:56",
+        "is_combined": false,
+        "note": "正式参加"
+      },
+      {
+        "rank": 2,
+        "school": "盛岡第三",
+        "time": "01:21:22",
+        "is_combined": false,
+        "note": "正式参加"
+      },
+      {
+        "rank": 3,
+        "school": "盛岡大学附属",
+        "time": "01:24:16",
+        "is_combined": false,
+        "note": "正式参加"
+      },
+      {
+        "rank": 4,
+        "school": "盛岡市立",
+        "time": "01:24:37",
+        "is_combined": false,
+        "note": "正式参加"
+      },
+      {
+        "rank": 5,
+        "school": "一関第一",
+        "time": "01:25:21",
+        "is_combined": false,
+        "note": "正式参加"
+      },
+      {
+        "rank": 6,
+        "school": "花巻北",
+        "time": "01:27:55",
+        "is_combined": false,
+        "note": "正式参加"
+      },
+      {
+        "rank": 7,
+        "school": "花巻南",
+        "time": "01:33:11",
+        "is_combined": false,
+        "note": "正式参加"
+      },
+      {
+        "rank": null,
+        "school": "合同C",
+        "time": "01:35:46",
+        "is_combined": true,
+        "note": "オープン参加。公式記録表に順位番号なし。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "岩手県高等学校体育連盟",
+        "url": "https://www.iwate-koutairen.com/",
+        "type": "公式主催団体ページ",
+        "supports": "第77回全国高等学校駅伝競走大会岩手県予選会兼第38回全国高等学校女子駅伝競走大会岩手県予選会の関係資料掲載を確認。"
+      },
+      {
+        "title": "令和8年度高等学校駅伝競走大会 岩手県大会",
+        "url": "https://hanamaki-sports.com/facility04/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E5%BA%A6%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%A7%85%E4%BC%9D%E7%AB%B6%E8%B5%B0%E5%A4%A7%E4%BC%9A%E3%80%80%E5%B2%A9%E6%89%8B%E7%9C%8C%E5%A4%A7%E4%BC%9A/",
+        "type": "公式会場案内",
+        "supports": "令和8年度大会の開催日10月21日と日居城野陸上競技場を確認。"
+      },
+      {
+        "title": "高校駅伝岩手県予選が行われ女子は花巻東、男子は一関学院が優勝",
+        "url": "https://newsdig.tbs.co.jp/articles/ibc/3028162?display=1",
+        "type": "地元放送局報道",
+        "supports": "10月21日の花巻市開催、女子5区間21.0975km、11校8チーム、花巻東01:13:56での優勝を確認。"
+      },
+      {
+        "title": "花巻東が5年連続優勝 17回目の都大路へ 高校駅伝・岩手女子",
+        "url": "https://news.yahoo.co.jp/articles/06937a33a6a9ea93a0ab18f442fa237906dda4b5",
+        "type": "毎日新聞配信記事",
+        "supports": "大会の正式名称、花巻市特設コース、女子21.0975km、花巻東の優勝および全国大会出場を確認。"
+      },
+      {
+        "title": "岩手県高校駅伝 2026 結果・速報",
+        "url": "https://blog.neet-shikakugets.com/iwate-koukou-ekiden-results",
+        "type": "詳細リザルト掲載ページ",
+        "supports": "2026年10月21日開催の女子全7校の順位・総合タイム、各区間通過記録、合同Cオープンの総合タイムを本文で確認。"
+      },
+      {
+        "title": "岩手県高校駅伝予選会 2026の結果速報リザルト",
+        "url": "https://www.sposoku.com/koukouekiden-iwate/",
+        "type": "結果掲載ページ",
+        "supports": "日程、発着地、女子上位5校の順位・タイムを詳細リザルト掲載ページと照合。"
+      },
+      {
+        "title": "第38回全国高等学校女子駅伝競走大会 岩手県予選会 記録表 女子オープン",
+        "url": "https://hanamakitf.jimdofree.com/app/download/11073439371/2_%E7%B7%8F%E5%90%88%E6%9C%80%E7%B5%82%E7%B5%90%E6%9E%9C_%E5%A5%B3%E5%AD%90%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3.pdf?t=1792576978",
+        "type": "公式結果PDF",
+        "supports": "開催日、女子5区間の距離、合同Cがオープン参加で総合01:35:46・順位なしであることを確認。"
+      }
+    ],
+    "summary": "2026年10月21日、花巻市特設高校駅伝コースで女子5区間21.0975kmとして開催。花巻東が01:13:56で優勝、2位は盛岡第三の01:21:22。正式順位は7校までで、合同Cは01:35:46のオープン参加（順位なし）。",
+    "caveats": [
+      "通常参加7チームの順位・タイムは2026年大会の詳細リザルト本文で確認し、上位5校は別の結果掲載ページでも照合した。閲覧できた公式PDFは合同Cの女子オープン結果であり、通常参加7チームの総合結果PDFへの直接リンクは確認できなかった。",
+      "岩手県女子は5区間21.0975kmである。県ごとにコース、距離、気象条件が異なり得るため、都道府県間のタイムは単純比較しない。",
+      "県予選2位は盛岡第三だが、2位であることだけから東北地区代表や都大路特別枠の確定を意味づけない。"
+    ],
+    "report_path": "/home/ubuntu/research/iwate.md",
+    "json_path": "/home/ubuntu/research/iwate.json",
+    "is_partial_result": false
+  },
+  {
+    "id": "miyagi",
+    "prefecture": "宮城県",
+    "event_name": "男子第77回・女子第38回全国高等学校駅伝競走大会宮城県予選 兼 男子第62回・女子第37回東北高等学校駅伝競走大会宮城県予選会",
+    "event_date": "2026-10-24",
+    "venue": "栗原市ハーフマラソンコース",
+    "status": "verified_result",
+    "distance_km": 21.0975,
+    "teams": [
+      {
+        "rank": 1,
+        "school": "仙台育英",
+        "time": "01:06:42",
+        "is_combined": false,
+        "note": "主催者・毎日新聞社の当日記事本文で優勝と記録を確認。公式の総合成績PDFは未掲載。"
+      },
+      {
+        "rank": 2,
+        "school": "東北",
+        "time": "01:12:44",
+        "is_combined": false,
+        "note": "当日（2026-10-24）の月陸Online投稿を転載した結果ページと、独立した速報集約ページの本文が、ともに2位を東北・1時間12分44秒と記載。公式総合成績表ではない補助確認。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "東北高等学校駅伝競走大会宮城県予選会 実施要項",
+        "url": "https://www.jaaf-miyagi.com/track-and-field/wp-content/uploads/2026/09/afc4931996eb17a30ec8063058ac7f18.pdf",
+        "type": "official PDF",
+        "supports": "女子の開催日・開始時刻、栗原市ハーフマラソンコース、21.0975km・5区間、合同チームはオープン参加、全国代表は優勝校、東北大会女子枠4校（15校以上で1校増）を確認。"
+      },
+      {
+        "title": "全国高等学校駅伝競走大会宮城県予選 大会告知",
+        "url": "https://www.jaaf-miyagi.com/2026/09/14671/",
+        "type": "official web page",
+        "supports": "宮城陸協が2026年9月16日に本大会の要項・女子コース図を掲載した公式の大会告知。"
+      },
+      {
+        "title": "宮城陸上競技協会 競技会結果",
+        "url": "https://www.jaaf-miyagi.com/category/result/",
+        "type": "official results index",
+        "supports": "2026年10月24日16時台の確認時点で、本大会の結果記事・総合成績PDFが掲載されていないこと。"
+      },
+      {
+        "title": "宮城県高体連陸上競技専門部",
+        "url": "https://miyariku-h.sakura.ne.jp/",
+        "type": "official web page",
+        "supports": "県高校駅伝の公開結果リンクが2025年分までで、2026年度の結果リンクを確認できないこと。"
+      },
+      {
+        "title": "仙台育英が優勝 35年連続35回目の都大路 高校駅伝 宮城女子",
+        "url": "https://mainichi.jp/articles/20261024/k00/00m/050/073000c",
+        "type": "co-organizer news report",
+        "supports": "10月24日に女子が開催され、合同チーム5チームを含む16チームが出場し、仙台育英が01:06:42で優勝したこと。"
+      },
+      {
+        "title": "宮城県高校駅伝 2026 結果・速報（リザルト）",
+        "url": "https://blog.neet-shikakugets.com/miyagi-koukou-ekiden-results",
+        "type": "results aggregation / embedded same-day Getsuriku Online post",
+        "supports": "2026年10月24日付の月陸Online投稿として『昨年まで2年連続で東北地区代表の東北が1時間12分44秒で2位』を本文に転載。仙台育英の優勝タイム1:06:42とも整合する。"
+      },
+      {
+        "title": "宮城県高校駅伝(予選会)2026の結果速報リザルト、代表校",
+        "url": "https://www.sposoku.com/koukouekiden-miyagi/",
+        "type": "same-day results aggregation",
+        "supports": "令和8年度・2026年10月24日開催の女子結果速報リザルト本文で、『2位 東北 1時間12分44秒』と明記。上位5校のみ掲載。"
+      }
+    ],
+    "summary": "2026年10月24日開催。仙台育英が01:06:42で優勝。2位の東北01:12:44は月陸Online当日投稿を転載した結果ページと別の速報集約ページの本文で一致を確認。公式総合成績表は未確認で、全順位・3位以下は収録していない。",
+    "caveats": [
+      "1位は主催社・毎日新聞の当日記事、2位は補助的な結果速報2件で確認。公式全成績PDFでの確認とは区別する。",
+      "3位以下の正式順位・記録と合同/オープンの参加実績は今回未確認。",
+      "宮城県予選要項では合同チームを東北大会枠の参加校数に含む。当日記事の合同5を含む16チームが公式集計と同じなら、5校枠の条件を満たす。正式出場校リストでの確認が必要。"
+    ],
+    "report_path": "/home/ubuntu/research/miyagi.md",
+    "json_path": "/home/ubuntu/research/miyagi.json",
+    "is_partial_result": true
+  },
+  {
+    "id": "akita",
+    "prefecture": "秋田県",
+    "event_name": "第38回女子全国高等学校駅伝競走大会秋田県予選",
+    "event_date": "2026-10-23",
+    "venue": "秋田県立中央公園周回コース（秋田市雄和、県営陸上競技場発着）",
+    "status": "verified_result",
+    "distance_km": 21.0975,
+    "teams": [
+      {
+        "rank": 1,
+        "school": "横手清陵学院",
+        "time": "01:15:09",
+        "is_combined": false,
+        "note": "秋田魁新報では「横手清陵」と表記。2年連続2回目の優勝、全国大会出場。"
+      },
+      {
+        "rank": 2,
+        "school": "秋田北鷹",
+        "time": "01:15:42",
+        "is_combined": false,
+        "note": "秋田工業高校陸上部OB会掲載の学校別結果で確認。"
+      },
+      {
+        "rank": 3,
+        "school": "秋田工業",
+        "time": "01:15:57",
+        "is_combined": false,
+        "note": "秋田工業高校陸上部OB会掲載の学校別結果で確認。"
+      },
+      {
+        "rank": 4,
+        "school": "明桜",
+        "time": null,
+        "is_combined": false,
+        "note": "順位は公開本文で確認したが、2026年のタイムは公式結果表・公開本文とも確認できない。東北大会出場権の対象は上位4チームと報道。"
+      },
+      {
+        "rank": 5,
+        "school": "鹿角",
+        "time": null,
+        "is_combined": false,
+        "note": "順位は公開本文で確認したが、2026年のタイムは公式結果表・公開本文とも確認できない。"
+      },
+      {
+        "rank": 6,
+        "school": "大曲",
+        "time": null,
+        "is_combined": false,
+        "note": "順位は公開本文で確認したが、2026年のタイムは公式結果表・公開本文とも確認できない。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "男子・秋田工、女子・横手清陵が連覇　高校駅伝秋田県予選【記録あり】",
+        "url": "https://www.sakigake.jp/news/article/20261023AK0020/",
+        "type": "result news report",
+        "supports": "2026-10-23の開催、女子5区間21.0975km、横手清陵の優勝記録01:15:09、女子9チーム（合同を含む）、女子上位4チームの東北大会出場権、会場の県営陸上競技場発着を確認。"
+      },
+      {
+        "title": "駅伝競走大会について",
+        "url": "https://akita-koutairen.com/article/4858/",
+        "type": "official competition notice",
+        "supports": "秋田県高体連の公式開催案内。令和8年10月23日、女子10:00出発、会場は秋田県立中央公園周回コースであることを確認。"
+      },
+      {
+        "title": "高等学校総合体育大会駅伝競走大会　女子コース",
+        "url": "https://akita-koutairen.com/data/ekiden/course-womens_2026.pdf",
+        "type": "official course PDF",
+        "supports": "県高体連が公開した2026年女子1～5区のコース図を確認。"
+      },
+      {
+        "title": "秋田県立秋田工業高等学校陸上競技部OB会　OB会だより",
+        "url": "http://www.akiko-rco.org/topics/topics.cgi",
+        "type": "school alumni result report",
+        "supports": "女子の1位横手清陵学院01:15:09、2位秋田北鷹01:15:42、3位秋田工高01:15:57、4位明桜、5位鹿角、6位大曲を確認。"
+      },
+      {
+        "title": "師走の京都・都大路へ！全国高校駅伝の県予選　女子は接戦の末に横手清陵・男子は大会記録を更新した秋田工業　それぞれ連覇を果たす　秋田",
+        "url": "https://news.ntv.co.jp/category/sports/abcd49dde56c6341b7b6f55a7a900c5ced",
+        "type": "broadcast news report",
+        "supports": "女子は5人で21.0975km、横手清陵の01:15:09優勝を確認。本文は女子8チームとしており、女子9チーム（合同含む）とする秋田魁新報記事との差異も確認。"
+      },
+      {
+        "title": "秋田県高等学校体育連盟　競技日程・結果",
+        "url": "https://akita-koutairen.com/schedule/",
+        "type": "official results index",
+        "supports": "2026年度の公式競技結果一覧を確認したが、10月24日16時台の閲覧時点で2026年高校駅伝女子の公式結果PDFへの掲載は確認できなかった。"
+      }
+    ],
+    "summary": "2026年10月23日実施の女子県予選は横手清陵学院が01:15:09で優勝。公開本文で1～6位の学校名、1～3位のタイムまで確認した。県高体連・県陸協の2026年公式全順位PDFは10月24日16時台に確認できず、7位以下、4～6位のタイム、合同／オープン参加の識別は未確認である。",
+    "caveats": [
+      "2026年の公式結果PDF・全順位表へのリンクは、確認時点で県高体連の競技日程・結果ページおよび県陸協公開一覧に見当たらなかった。前年2025年の結果は使用していない。",
+      "秋田魁新報は「合同を含む女子9チームが出場」と報じ、ABSニュースは「8チームでの争い」と記す。公式リザルトが未掲載のため、合同／オープン参加チームの名称、順位、記録を推測していない。",
+      "4～6位の学校名は2つの学校関係公開記事で一致するが、各タイムは掲載されていない。7位以下は学校名・順位・タイムとも未確認である。",
+      "女子は5区間21.0975km。県別タイムの比較では、同距離であっても各県のコース設定・標高・気象条件が同一ではない点に留意が必要である。"
+    ],
+    "report_path": "/home/ubuntu/research/akita.md",
+    "json_path": "/home/ubuntu/research/akita.json",
+    "is_partial_result": true
+  },
+  {
+    "id": "yamagata",
+    "prefecture": "山形県",
+    "event_name": "第77回山形県高等学校総合体育大会駅伝競走大会（女子）",
+    "event_date": "2026-10-24",
+    "venue": "光洋精機アスリートフィールド長井付設周回コース（山形県長井市）",
+    "status": "verified_result",
+    "distance_km": 21.0975,
+    "teams": [
+      {
+        "rank": 1,
+        "school": "山形中央",
+        "time": "01:11:22",
+        "is_combined": false,
+        "note": "公式PDFにオープン参加の表示なし。"
+      },
+      {
+        "rank": 2,
+        "school": "東北文教大学山形城北",
+        "time": "01:13:02",
+        "is_combined": false,
+        "note": "公式PDFにオープン参加の表示なし。"
+      },
+      {
+        "rank": 3,
+        "school": "酒田南",
+        "time": "01:17:52",
+        "is_combined": false,
+        "note": "公式PDFにオープン参加の表示なし。"
+      },
+      {
+        "rank": 4,
+        "school": "東海大学山形",
+        "time": "01:19:23",
+        "is_combined": false,
+        "note": "公式PDFにオープン参加の表示なし。"
+      },
+      {
+        "rank": 5,
+        "school": "山形西",
+        "time": "01:20:41",
+        "is_combined": false,
+        "note": "公式PDFにオープン参加の表示なし。"
+      },
+      {
+        "rank": 6,
+        "school": "山形学院",
+        "time": "01:26:30",
+        "is_combined": false,
+        "note": "公式PDFにオープン参加の表示なし。"
+      },
+      {
+        "rank": 7,
+        "school": "九里・山北・志誠館",
+        "time": "01:32:39",
+        "is_combined": true,
+        "note": "3校併記の合同表記。公式PDFの備考欄に合同・オープンの明示はない。"
+      },
+      {
+        "rank": 8,
+        "school": "鶴岡東",
+        "time": "01:32:54",
+        "is_combined": false,
+        "note": "公式PDFにオープン参加の表示なし。"
+      },
+      {
+        "rank": 9,
+        "school": "山形東",
+        "time": "01:34:30",
+        "is_combined": false,
+        "note": "公式PDFにオープン参加の表示なし。"
+      },
+      {
+        "rank": 10,
+        "school": "米沢興譲館",
+        "time": "01:41:30",
+        "is_combined": false,
+        "note": "公式PDFにオープン参加の表示なし。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "第77回山形県高等学校総合体育大会駅伝競走大会 女子リザルト",
+        "url": "https://www.jaaf-yamagata.jp/taikai/2026/ken_h_ekiden_f.pdf",
+        "type": "official_result_pdf",
+        "supports": "大会名、2026-10-24、会場、女子の総合順位1～10位・記録、5区間距離、合同表記・備考欄の記載を確認。"
+      },
+      {
+        "title": "山形陸上競技協会",
+        "url": "https://www.jaaf-yamagata.jp/",
+        "type": "official_association_page",
+        "supports": "2026-10-24付『10.24 山形県高校駅伝』に女子リザルトへのリンクが掲載されていることを確認。"
+      },
+      {
+        "title": "2026山形県高校駅伝 長井市のコースはこれだ",
+        "url": "https://newsdig.tbs.co.jp/articles/-/3012408",
+        "type": "official_broadcaster_article",
+        "supports": "2026年10月24日（土）に長井市で開催すると本文に記載。"
+      }
+    ],
+    "summary": "2026年10月24日の第77回山形県高等学校総合体育大会駅伝競走大会女子は、山形中央が01:11:22で優勝、東北文教大学山形城北が01:13:02で2位。山形県陸上競技協会の公式リザルトPDF本文で、順位1位から10位までと女子5区間合計21.0975kmを確認した。",
+    "caveats": [
+      "公式PDFの1頁目『総合成績』は第8位までだが、2頁目『総合成績リスト』は第10位まで順位と総合タイムを掲載しているため、本データは同リストに基づき全10チームを収録した。",
+      "『九里・山北・志誠館』は3校併記のため合同表記として扱ったが、公式PDFの備考欄には『合同』の語もオープン参加表示もない。",
+      "2026年度の県大会要項本文またはPDFの公式URLは、読んだ県陸協・高体連公開ページと公式ドメイン優先の検索では確認できなかった。結果PDFのURLとは区別し、要項URLは未確認とした。",
+      "都大路または地区代表・特別枠の選考区分は公式リザルトに記載がない。第2位だけを代表対象とみなさず、別途その年の選考規定を確認する必要がある。",
+      "他県とのタイム比較では、コース・区間設定・距離差を確認する必要がある。本大会女子は5区間・合計21.0975km。"
+    ],
+    "report_path": "/home/ubuntu/research/yamagata.md",
+    "json_path": "/home/ubuntu/research/yamagata.json",
+    "is_partial_result": false
+  },
+  {
+    "id": "fukushima",
+    "prefecture": "福島県",
+    "event_name": "第44回福島県高等学校女子駅伝競走大会（令和8年度）",
+    "event_date": "2026-10-31",
+    "venue": "猪苗代町総合体育館（カメリーナ）付設女子駅伝コース（同館発着の折り返しコース）",
+    "status": "scheduled",
+    "distance_km": 21.0975,
+    "teams": [],
+    "sources": [
+      {
+        "title": "福島県高等学校駅伝競走大会 実施要項",
+        "url": "https://gold.jaic.org/fukushima/joho/2026/20261031-1.pdf",
+        "type": "official PDF",
+        "supports": "福島陸上競技協会が公開する要項本文。女子第44回大会の開催日（2026-10-31）、会場、女子21.0975km・5区間、合同・オープン参加規定、全国・東北大会の出場規定を確認した。"
+      },
+      {
+        "title": "福島陸上競技協会 高体連関係",
+        "url": "https://gold.jaic.org/fukushima/kotairen.html",
+        "type": "official webpage",
+        "supports": "2026年の第71回・第44回福島県高校駅伝の公式掲載欄を確認した。2026-10-24時点では要項等7資料のみで、当該大会の個別結果リンクは未掲載である。"
+      }
+    ],
+    "summary": "2026-10-24 16時台JST時点で、福島県の女子県予選は2026-10-31開催予定で未開催。公式要項本文で女子21.0975km・5区間、猪苗代町総合体育館（カメリーナ）発着を確認した。公式順位、学校名、タイム、合同・オープン参加実績は未発表のため掲載しない。",
+    "caveats": [
+      "現在時点は大会予定日の7日前であり、2025年以前の結果を2026年結果として扱っていない。",
+      "福島陸協の高体連関係ページは当該大会の公式掲載元だが、2026-10-24時点では個別の結果PDF／結果リンクは未掲載。",
+      "要項上、合同チームは参加可能、オープン参加は順位・区間賞の対象外。ただし実際の参加区分は未開催のため未確認。",
+      "要項上、全国大会は優勝校、東北大会は原則4位まで（参加15校以上なら5位まで）が対象である。地区代表枠は各県優勝校を除く最上位校であり、2位だけを自動的な対象とは扱えない。"
+    ],
+    "report_path": "/home/ubuntu/research/fukushima.md",
+    "json_path": "/home/ubuntu/research/fukushima.json",
+    "is_partial_result": false
+  }
+]

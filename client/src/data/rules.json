@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-14",
+  "start": "11月14日（土） 女子10:30スタート",
+  "venue": "山形県長井市・光洋精機アスリートフィールド長井付設周回コース",
+  "distance_km": 21.0975,
+  "condition": "東北大会の正式出場校のうち、各県代表校を除く最上位校1校が全国大会の女子地区代表になります。県2位校だけが対象ではありません。地区代表の最上位校が出場を辞退した場合は、全国大会要項により次位校となります。",
+  "eligibility": "東北大会女子の参加資格は各県上位4チーム。県予選の参加数が15チーム以上の県は1チーム追加できます。開催県のオープン参加は別枠で1チーム認められていますが、地区代表対象としては扱いません。",
+  "nationalDate": "2026-12-20",
+  "nationalStart": "女子10:20スタート",
+  "nationalRepresentativeException": "県優勝校が全国出場を辞退した場合の県代表は次位校。東北大会で除外するのは実際に県代表となった校であり、常に県大会1位校とは限りません。",
+  "contingency": "東北大会が中止または中断した場合は別に定める代替大会で代表を決める。全国大会中止の場合は代替大会を実施しない。",
+  "sections": "東北大会要項10参加資格⑵・⑻、11競技規程⑼。全国大会要項4参加資格⑴・⑵。",
+  "sources": [
+    {"title":"2026年東北高校駅伝 公式実施要項 PDF","url":"https://www.jaaf-yamagata.jp/touhoku_h_ekiden/data/01.pdf"},
+    {"title":"2026年東北高校駅伝 公式連絡サイト","url":"https://www.jaaf-yamagata.jp/touhoku_h_ekiden/index.html"},
+    {"title":"2026年全国高校駅伝 公式大会要項 PDF","url":"https://cdn.mainichi.jp/vol1/koukouekiden/doc/summary/guide2026.pdf"}
+  ]
+}
