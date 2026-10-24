@@ -1,0 +1,281 @@
+{
+  "checked_at": "2026年10月24日 17時台（JST）",
+  "ranked": [
+    {
+      "prefecture_id": "miyagi",
+      "prefecture": "宮城県",
+      "school": "東北",
+      "prefecture_rank": 2,
+      "time": "01:12:44",
+      "time_jp": "1時間12分44秒",
+      "seconds": 4364,
+      "source_url": "https://www.sposoku.com/koukouekiden-miyagi/",
+      "evidence_level": "補助結果資料",
+      "note": "当日（2026-10-24）の月陸Online投稿を転載した結果ページと、独立した速報集約ページの本文が、ともに2位を東北・1時間12分44秒と記載。公式総合成績表ではない補助確認。",
+      "first_gap_seconds": 362,
+      "reference_rank": 1,
+      "leader_gap_seconds": 0,
+      "reference_id": 3
+    },
+    {
+      "prefecture_id": "yamagata",
+      "prefecture": "山形県",
+      "school": "東北文教大学山形城北",
+      "prefecture_rank": 2,
+      "time": "01:13:02",
+      "time_jp": "1時間13分02秒",
+      "seconds": 4382,
+      "source_url": "https://www.jaaf-yamagata.jp/taikai/2026/ken_h_ekiden_f.pdf",
+      "evidence_level": "公式結果PDF",
+      "note": "公式PDFにオープン参加の表示なし。",
+      "first_gap_seconds": 100,
+      "reference_rank": 2,
+      "leader_gap_seconds": 18,
+      "reference_id": 4
+    },
+    {
+      "prefecture_id": "miyagi",
+      "prefecture": "宮城県",
+      "school": "聖和学園",
+      "prefecture_rank": 3,
+      "time": "01:15:23",
+      "time_jp": "1時間15分23秒",
+      "seconds": 4523,
+      "source_url": "https://www.sposoku.com/koukouekiden-miyagi/",
+      "evidence_level": "補助結果速報",
+      "note": "2026年女子結果速報本文で3位・1時間15分23秒と掲載。学校名は単独校名であり、合同チームまたはOPの明示は確認できない。",
+      "first_gap_seconds": 521,
+      "reference_rank": 3,
+      "leader_gap_seconds": 159,
+      "reference_id": 3
+    },
+    {
+      "prefecture_id": "miyagi",
+      "prefecture": "宮城県",
+      "school": "古川学園",
+      "prefecture_rank": 4,
+      "time": "01:15:41",
+      "time_jp": "1時間15分41秒",
+      "seconds": 4541,
+      "source_url": "https://www.sposoku.com/koukouekiden-miyagi/",
+      "evidence_level": "補助結果速報",
+      "note": "2026年女子結果速報本文で4位・1時間15分41秒と掲載。学校名は単独校名であり、合同チームまたはOPの明示は確認できない。",
+      "first_gap_seconds": 539,
+      "reference_rank": 4,
+      "leader_gap_seconds": 177,
+      "reference_id": 3
+    },
+    {
+      "prefecture_id": "akita",
+      "prefecture": "秋田県",
+      "school": "秋田北鷹",
+      "prefecture_rank": 2,
+      "time": "01:15:42",
+      "time_jp": "1時間15分42秒",
+      "seconds": 4542,
+      "source_url": "http://www.akiko-rco.org/topics/topics.cgi",
+      "evidence_level": "学校OB会資料",
+      "note": "秋田工業高校陸上部OB会掲載の学校別結果で確認。",
+      "first_gap_seconds": 33,
+      "reference_rank": 5,
+      "leader_gap_seconds": 178,
+      "reference_id": 5
+    },
+    {
+      "prefecture_id": "akita",
+      "prefecture": "秋田県",
+      "school": "秋田工業",
+      "prefecture_rank": 3,
+      "time": "01:15:57",
+      "time_jp": "1時間15分57秒",
+      "seconds": 4557,
+      "source_url": "http://www.akiko-rco.org/topics/topics.cgi",
+      "evidence_level": "学校OB会資料",
+      "note": "秋田工業高校陸上部OB会掲載の学校別結果で確認。",
+      "first_gap_seconds": 48,
+      "reference_rank": 6,
+      "leader_gap_seconds": 193,
+      "reference_id": 5
+    },
+    {
+      "prefecture_id": "yamagata",
+      "prefecture": "山形県",
+      "school": "酒田南",
+      "prefecture_rank": 3,
+      "time": "01:17:52",
+      "time_jp": "1時間17分52秒",
+      "seconds": 4672,
+      "source_url": "https://www.jaaf-yamagata.jp/taikai/2026/ken_h_ekiden_f.pdf",
+      "evidence_level": "公式結果PDF",
+      "note": "公式PDFにオープン参加の表示なし。",
+      "first_gap_seconds": 390,
+      "reference_rank": 7,
+      "leader_gap_seconds": 308,
+      "reference_id": 4
+    },
+    {
+      "prefecture_id": "yamagata",
+      "prefecture": "山形県",
+      "school": "東海大学山形",
+      "prefecture_rank": 4,
+      "time": "01:19:23",
+      "time_jp": "1時間19分23秒",
+      "seconds": 4763,
+      "source_url": "https://www.jaaf-yamagata.jp/taikai/2026/ken_h_ekiden_f.pdf",
+      "evidence_level": "公式結果PDF",
+      "note": "公式PDFにオープン参加の表示なし。",
+      "first_gap_seconds": 481,
+      "reference_rank": 8,
+      "leader_gap_seconds": 399,
+      "reference_id": 4
+    },
+    {
+      "prefecture_id": "iwate",
+      "prefecture": "岩手県",
+      "school": "盛岡第三",
+      "prefecture_rank": 2,
+      "time": "01:21:22",
+      "time_jp": "1時間21分22秒",
+      "seconds": 4882,
+      "source_url": "https://blog.neet-shikakugets.com/iwate-koukou-ekiden-results",
+      "evidence_level": "補助結果・2件照合",
+      "note": "正式参加",
+      "first_gap_seconds": 446,
+      "reference_rank": 9,
+      "leader_gap_seconds": 518,
+      "reference_id": 6
+    },
+    {
+      "prefecture_id": "iwate",
+      "prefecture": "岩手県",
+      "school": "盛岡大学附属",
+      "prefecture_rank": 3,
+      "time": "01:24:16",
+      "time_jp": "1時間24分16秒",
+      "seconds": 5056,
+      "source_url": "https://blog.neet-shikakugets.com/iwate-koukou-ekiden-results",
+      "evidence_level": "補助結果・2件照合",
+      "note": "正式参加",
+      "first_gap_seconds": 620,
+      "reference_rank": 10,
+      "leader_gap_seconds": 692,
+      "reference_id": 6
+    },
+    {
+      "prefecture_id": "iwate",
+      "prefecture": "岩手県",
+      "school": "盛岡市立",
+      "prefecture_rank": 4,
+      "time": "01:24:37",
+      "time_jp": "1時間24分37秒",
+      "seconds": 5077,
+      "source_url": "https://blog.neet-shikakugets.com/iwate-koukou-ekiden-results",
+      "evidence_level": "補助結果・2件照合",
+      "note": "正式参加",
+      "first_gap_seconds": 641,
+      "reference_rank": 11,
+      "leader_gap_seconds": 713,
+      "reference_id": 6
+    }
+  ],
+  "unranked": [
+    {
+      "prefecture_id": "akita",
+      "prefecture": "秋田県",
+      "school": "明桜",
+      "prefecture_rank": 4,
+      "time": null,
+      "time_jp": "記録未確認",
+      "seconds": null,
+      "source_url": "http://www.akiko-rco.org/topics/topics.cgi",
+      "evidence_level": "学校OB会資料",
+      "note": "同一の2026女子結果表で4位・明桜高校までは確認できたが、総合タイムは未掲載。県高体連の令和8年度結果欄、明桜高校公式陸上競技部ページ、指定の結果集約ページ（2026欄）にも4位タイムまたは公式全結果PDFは確認できなかったためnull。2025年の明桜（3位・01:15:32）は使用していない。",
+      "first_gap_seconds": null,
+      "reference_id": 5
+    }
+  ],
+  "pending": [
+    {
+      "prefecture": "青森県",
+      "event_date": "2026-10-29",
+      "note": "未開催。2〜4位の3枠は未確定"
+    },
+    {
+      "prefecture": "福島県",
+      "event_date": "2026-10-31",
+      "note": "未開催。2〜4位の3枠は未確定"
+    }
+  ],
+  "additional_reference": [
+    {
+      "prefecture": "宮城県",
+      "school": "仙台大明成",
+      "prefecture_rank": 5,
+      "time": "01:17:09",
+      "time_jp": "1時間17分09秒",
+      "source_url": "https://www.sposoku.com/koukouekiden-miyagi/",
+      "note": "県予選15チーム以上の追加正式枠に関する参考。実際の東北大会出場は最終名簿確認待ち。",
+      "reference_id": 3
+    },
+    {
+      "prefecture": "山形県",
+      "school": "山形西",
+      "prefecture_rank": 5,
+      "time": "01:20:41",
+      "time_jp": "1時間20分41秒",
+      "source_url": "https://www.jaaf-yamagata.jp/taikai/2026/ken_h_ekiden_f.pdf",
+      "note": "開催県OP枠の実際の出場校は未確定。この5位校が出場するとは断定しない。",
+      "reference_id": 4
+    }
+  ],
+  "references": [
+    {
+      "url": "https://www.jaaf-yamagata.jp/touhoku_h_ekiden/data/01.pdf",
+      "title": "2026年東北高校駅伝 公式実施要項"
+    },
+    {
+      "url": "https://cdn.mainichi.jp/vol1/koukouekiden/doc/summary/guide2026.pdf",
+      "title": "2026年全国高校駅伝 公式大会要項"
+    },
+    {
+      "url": "https://www.sposoku.com/koukouekiden-miyagi/",
+      "title": "宮城県 2026年女子県高校駅伝の結果資料"
+    },
+    {
+      "url": "https://www.jaaf-yamagata.jp/taikai/2026/ken_h_ekiden_f.pdf",
+      "title": "山形県 2026年女子県高校駅伝の結果資料"
+    },
+    {
+      "url": "http://www.akiko-rco.org/topics/topics.cgi",
+      "title": "秋田県 2026年女子県高校駅伝の結果資料"
+    },
+    {
+      "url": "https://blog.neet-shikakugets.com/iwate-koukou-ekiden-results",
+      "title": "岩手県 2026年女子県高校駅伝の結果資料"
+    },
+    {
+      "url": "https://www.jaafaomori.com/schedule/",
+      "title": "青森県 2026年女子県高校駅伝の公式日程・要項"
+    },
+    {
+      "url": "https://gold.jaic.org/fukushima/joho/2026/20261031-1.pdf",
+      "title": "福島県 2026年女子県高校駅伝の公式日程・要項"
+    },
+    {
+      "url": "https://www.sposoku.com/koukouekiden-iwate/",
+      "title": "岩手県2026年女子結果の照合用資料"
+    },
+    {
+      "url": "https://blog.neet-shikakugets.com/miyagi-koukou-ekiden-results",
+      "title": "宮城県2026年女子2位の照合用資料"
+    }
+  ],
+  "analysis": [
+    "確認済みの参考タイムでは、東北 1時間12分44秒、東北文教大学山形城北 1時間13分02秒が先頭で、差は18秒です。これは県大会の記録順で、東北大会の予想順位ではありません。",
+    "県3・4位校の中で最も速い確認記録は宮城県の聖和学園で、1時間15分23秒です。全体参考3番目に入るため、県2位だけの比較では対象校の見え方が変わります。",
+    "秋田北鷹と秋田工業の差は15秒です。県3位の秋田工業も含め、当日のオーダーや区間ごとの走りで逆転し得る候補として見るのが適切です。",
+    "宮城4位の古川学園と秋田2位の秋田北鷹の記録差は1秒です。県内順位が違っても総合記録は近く、県4位校を除くと比較から漏れる例です。",
+    "山形県予選と東北大会は同じ長井市の会場名・周回コースで案内されていますが、区間設定や当日の条件を同一と決めつけることはできません。県間の総合タイムから勝率を算出したり、出場権の獲得を断定したりはしていません。",
+    "青森・福島の予選が終わるまでは全県の比較が完成していません。比較対象の県2〜4位校も、正式な東北大会出場名簿と実際の県代表校を確認してから全国地区代表の候補を確定します。"
+  ]
+}

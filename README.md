@@ -1,6 +1,6 @@
 # 東北女子高校駅伝 2026｜都大路へのもう一枠
 
-東北6県の2026年女子県高校駅伝について、確認できた順位・高校名・総合記録と資料リンクを掲載するサイトです。県2位校を比較できますが、県ごとの条件が異なるため東北大会の予想順位ではありません。東北大会の地区代表枠は県2位校限定ではなく、実際の県代表校を除く最上位校1校が対象です。
+東北6県の2026年女子県高校駅伝について、確認できた順位・高校名・総合記録と資料リンクを掲載するサイトです。県2〜4位校を参考タイム順に比較できますが、県ごとの条件が異なるため東北大会の予想順位ではありません。東北大会の地区代表枠は県2位校限定ではなく、実際の県代表校を除く最上位校1校が対象です。
 
 調査基準日は2026年10月24日。公式資料と補助的な報道・結果速報を区別し、青森・福島の未開催結果は推測していません。このサイトは大会主催者の公式サイトではなく、自動更新もしません。
 
@@ -24,11 +24,14 @@ Pages設定の「Visit site」に公開URLが表示されたら公開先を確�
 pnpm install --frozen-lockfile
 pnpm check
 pnpm test
+python3 scripts/build-comparison.py
 pnpm build:pages
 git add client docs
 git commit -m "Update verified prefectural results"
 git push origin main
 ```
+
+`python3 scripts/build-comparison.py` は比較データからExcel・テキスト・CSVと解説を生成します（Pythonのopenpyxlが必要）。
 
 `pnpm build:pages` はGitHub Pagesの `/tohoku-ekiden-2026/` パスに対応した静的サイトを `docs/` に生成します。`docs/` は生成物なので直接編集しないでください。Pagesをmainの/docsに設定していれば、更新されたdocsのpushがGitHubの公開処理の対象になります。
 
