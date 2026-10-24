@@ -171,6 +171,7 @@ function vitePluginPublicPlatformConfig(): Plugin {
 const plugins = [vitePluginPublicPlatformConfig(), react(), tailwindcss(), jsxLocPlugin(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
+  base: process.env.PAGES_BASE_PATH || "/",
   plugins,
   resolve: {
     alias: {

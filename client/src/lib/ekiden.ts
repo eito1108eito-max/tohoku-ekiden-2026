@@ -61,3 +61,7 @@ export function sourceKind(source: Source): string {
   return '補助結果資料';
 }
 export const externalUrl = (url: string) => url.replaceAll('(', '%28').replaceAll(')', '%29');
+export function publicAsset(name: string): string {
+  const base = import.meta.env?.BASE_URL ?? process.env.PAGES_BASE_PATH ?? '/';
+  return `${base}${name.replace(/^\//, '')}`;
+}

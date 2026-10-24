@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eito1108eito-max.github.io/tohoku-ekiden-2026/sitemap.xml

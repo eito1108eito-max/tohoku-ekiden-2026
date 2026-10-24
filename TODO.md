@@ -12,3 +12,11 @@
 ## 今後の確定結果待ち
 
 青森10月29日、福島10月31日は未開催のため結果欄は空欄。宮城の公式全成績、秋田4位以下のタイムと未確認チームの詳細、岩手通常参加校の公式結果PDFへの直接リンクは未確認として注記済み。サイトは10月24日調査版で自動更新しない。一般公開は別途ユーザーの公開操作が必要。
+
+## GitHub Pages公開
+
+- [x] ユーザー承認済みのGitHubリポジトリ `eito1108eito-max/tohoku-ekiden-2026` に既存サイトを転送し、保存先の切り替えを完了した。
+- [x] GitHub Pagesのリポジトリ配下URLに、画面のルーティング・画像・データ・レポートのリンクを対応させた。通常のManusプレビューはルートURLで維持する。
+- [x] `pnpm build:pages` と生成済み `docs/` を用意し、mainの/docsから公開できる構成にした。Manus専用API設定を公開物から除き、`.nojekyll`、サイトマップ、公開・更新手順を用意した。
+- [ ] 非公開リポジトリのPublic変更はユーザー確認待ち。GitHub FreeでのPages利用にはPublicが必要。
+- [ ] GitHub Pagesを有効化して公開先を確認する。現在の連携からPages APIを読むとHTTP403（Resource not accessible by integration）。設定は所有者のGitHub画面で行う必要がある。
