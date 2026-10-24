@@ -6,6 +6,8 @@
 
 ## GitHub Pagesで公開
 
+リポジトリは所有者の承認に基づいてPublicに変更済みです。公開用ファイルはmainの `docs/` に用意してあります。サイトの公開には、以下のPages有効化が必要です。
+
 公開予定URLは `https://eito1108eito-max.github.io/tohoku-ekiden-2026/` です。Pagesの公開設定とデプロイが完了するまで、このURLで閲覧できるとは限りません。
 
 GitHubのリポジトリ設定で **Settings → Pages** を開きます。**Source** は **Deploy from a branch**、**Branch** は **main**、フォルダは **/docs** を選び、**Save** を押してください。生成済みの `docs/index.html` を公開するため、ユーザー作成のGitHub ActionsワークフローやNode.jsのサーバーは不要です。GitHub側の内部デプロイ処理で公開されます。

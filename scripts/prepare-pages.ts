@@ -8,10 +8,13 @@ await mkdir(target, { recursive: true });
 await cp(source, target, { recursive: true });
 // このサイトは認証やAPIを使わないため、Manus専用の設定ファイルを公開物から除く。
 await rm(new URL('api/', target), { recursive: true, force: true });
+await rm(new URL('__manus__/', target), { recursive: true, force: true });
+await rm(new URL('.gitkeep', target), { force: true });
 await rm(new URL('manus-routes.json', target), { force: true });
 const entry = new URL('index.html', target);
 let html = await readFile(entry, 'utf8');
 html = html.replace(/<script\b[^>]*src=["'][^"']*\/api\/platform\/config\.js["'][^>]*><\/script>/g, '');
+html = html.replace(/<script\b[^>]*src=["'][^"']*\/__manus__\/[^"']+["'][^>]*><\/script>/g, '');
 html = html.replace('</head>', `
 <link rel="canonical" href="${origin}" />
 <meta property="og:url" content="${origin}" />
