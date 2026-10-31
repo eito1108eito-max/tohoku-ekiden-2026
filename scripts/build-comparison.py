@@ -13,7 +13,8 @@ PUBLIC = ROOT / 'client/public'
 OUT = Path('/home/ubuntu/research')
 DATA = json.loads((ROOT / 'client/src/data/prefectures.json').read_text())
 RULES = json.loads((ROOT / 'client/src/data/rules.json').read_text())
-CHECKED = '2026年10月24日 17時台（JST）'
+CHECKED = '2026年10月31日更新（JST）'
+OUT.mkdir(parents=True, exist_ok=True)
 
 
 def sec(value):
@@ -71,19 +72,32 @@ for pref in DATA:
             item['note'] += ' 合同・OP区分確認待ち。' if team['is_combined'] else ''
             missing.append(item)
     # 開催県追加OP、参加数による追加枠は比較本体から区別する。
-    if pref['id'] in ('yamagata', 'miyagi'):
+    if pref['id'] in ('yamagata', 'miyagi') or pref.get('participation', {}).get('extra_qualifier_confirmed'):
         fifth = next((t for t in pref['teams'] if t['rank'] == 5), None)
         if fifth:
             url, level = source_for(pref, fifth)
+            extra_note = pref.get('participation', {}).get('note') if pref.get('participation', {}).get('extra_qualifier_confirmed') else None
             extras.append({
                 'prefecture': pref['prefecture'], 'school': fifth['school'], 'prefecture_rank': 5,
                 'time': fifth['time'], 'time_jp': jp(fifth['time']), 'source_url': url,
-                'note': '開催県OP枠の実際の出場校は未確定。この5位校が出場するとは断定しない。' if pref['id'] == 'yamagata' else '県予選15チーム以上の追加正式枠に関する参考。実際の東北大会出場は最終名簿確認待ち。'
+                'note': '開催県OP枠の実際の出場校は未確定。この5位校が出場するとは断定しない。' if pref['id'] == 'yamagata' else extra_note or '県予選15チーム以上の追加正式枠に関する参考。実際の東北大会出場は最終名簿確認待ち。'
             })
 rows.sort(key=lambda t: (t['seconds'], t['prefecture'], t['prefecture_rank']))
 for index, row in enumerate(rows, 1):
     row['reference_rank'] = index
     row['leader_gap_seconds'] = row['seconds'] - rows[0]['seconds']
+
+rank_exclusions, open_reference = [], []
+for pref in DATA:
+    if not pref.get('not_applicable_ranks'):
+        continue
+    first = next(t for t in pref['teams'] if t['rank'] == 1)
+    url, level = source_for(pref, first)
+    rank_exclusions.append({'prefecture': pref['prefecture'], 'ranks': pref['not_applicable_ranks'], 'note': pref['rank_exclusion_note'], 'source_url': url})
+    for team in pref['teams']:
+        if team['rank'] is None:
+            open_url, _ = source_for(pref, team)
+            open_reference.append({'prefecture': pref['prefecture'], 'school': team['school'], 'time': team['time'], 'time_jp': jp(team['time']), 'note': '県予選OP・正式順位なし。県2〜4位の参考順に含めない。', 'source_url': open_url})
 
 refs = []
 def ref(url, title):
@@ -95,7 +109,7 @@ def ref(url, title):
 
 rule_ref = ref(RULES['sources'][0]['url'], '2026年東北高校駅伝 公式実施要項')
 national_ref = ref(RULES['sources'][2]['url'], '2026年全国高校駅伝 公式大会要項')
-for row in rows + missing + extras:
+for row in rows + missing + extras + rank_exclusions + open_reference:
     row['reference_id'] = ref(row['source_url'], f"{row['prefecture']} 2026年女子県高校駅伝の結果資料")
 for pref in DATA:
     if not pref['teams']:
@@ -103,7 +117,7 @@ for pref in DATA:
 ref('https://www.sposoku.com/koukouekiden-iwate/', '岩手県2026年女子結果の照合用資料')
 ref('https://blog.neet-shikakugets.com/miyagi-koukou-ekiden-results', '宮城県2026年女子2位の照合用資料')
 
-payload = {'checked_at': CHECKED, 'ranked': rows, 'unranked': missing, 'pending': pending, 'additional_reference': extras, 'references': refs}
+payload = {'checked_at': CHECKED, 'ranked': rows, 'unranked': missing, 'pending': pending, 'additional_reference': extras, 'rank_exclusions': rank_exclusions, 'open_reference': open_reference, 'references': refs}
 (ROOT / 'client/src/data/comparison.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n')
 (PUBLIC / 'comparison.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n')
 
@@ -111,6 +125,10 @@ summary = []
 if len(rows) >= 2:
     a, b = rows[:2]
     summary.append(f"確認済みの参考タイムでは、{a['school']} {a['time_jp']}、{b['school']} {b['time_jp']}が先頭で、差は{b['leader_gap_seconds']}秒です。これは県大会の記録順で、東北大会の予想順位ではありません。")
+for pref_id in ('aomori', 'fukushima'):
+    added = next((r for r in rows if r['prefecture_id'] == pref_id and r['prefecture_rank'] == 2), None)
+    if added:
+        summary.append(f"今回追加した{added['prefecture']}の2位は{added['school']}で、{added['time_jp']}、全体の参考順は{added['reference_rank']}番目です。先頭の確認記録との差は{added['leader_gap_seconds']}秒です。県代表の1位校はこの比較から除いています。")
 third_fourth = [r for r in rows if r['prefecture_rank'] in (3, 4)]
 if third_fourth:
     best = third_fourth[0]
@@ -124,7 +142,10 @@ if miyagi4 and 2 in akita:
     close = abs(miyagi4['seconds'] - akita[2]['seconds'])
     summary.append(f"宮城4位の古川学園と秋田2位の秋田北鷹の記録差は{close}秒です。県内順位が違っても総合記録は近く、県4位校を除くと比較から漏れる例です。")
 summary.append('山形県予選と東北大会は同じ長井市の会場名・周回コースで案内されていますが、区間設定や当日の条件を同一と決めつけることはできません。県間の総合タイムから勝率を算出したり、出場権の獲得を断定したりはしていません。')
-summary.append('青森・福島の予選が終わるまでは全県の比較が完成していません。比較対象の県2〜4位校も、正式な東北大会出場名簿と実際の県代表校を確認してから全国地区代表の候補を確定します。')
+if pending:
+    summary.append('結果未確認の県は比較から除外しています。確定結果を推測や過年度値で補っていません。')
+else:
+    summary.append(f"青森・福島を加え、全6県の予選結果を反映しました。県2〜4位の記録確認済み{len(rows)}校を比較し、タイム未確認{len(missing)}校は参考順から除外しています。出場権を争う最終対象校は、東北大会の正式出場名簿と実際の県代表校で確認してください。")
 
 payload['analysis'] = summary
 (ROOT / 'client/src/data/comparison.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n')
@@ -137,7 +158,16 @@ if missing:
     lines += ['', '## タイム未確認の比較対象校', '', '|県|高校名|県内順位|状況|確認資料|', '|---|---|---:|---|---|']
     for row in missing:
         lines.append(f"|{row['prefecture']}|{row['school']}|{row['prefecture_rank']}位|学校名・順位は確認、記録は未確認。参考順には入れない。|[{row['reference_id']}]|")
-lines += ['', '青森は10月29日、福島は10月31日の開催予定です。両県の2〜4位は未確定のため、学校名・記録を代用していません。']
+if pending:
+    lines += ['', '結果未確認の県は、学校名・記録を推測せず別記しています。']
+else:
+    new_refs = sorted({r['reference_id'] for r in rows if r['prefecture_id'] in ('aomori', 'fukushima')})
+    lines += ['', '青森10月29日、福島10月31日の開催結果を追加しました。全6県の結果を反映した比較です。 ' + ' '.join(f'[{i}]' for i in new_refs)]
+if rank_exclusions:
+    lines += ['', '## 正式順位なしを「記録未確認」と混同しない', '']
+    for row in rank_exclusions:
+        lines += [row['note'] + f" [{row['reference_id']}]", '']
+    lines += ['青森の県予選OPと、山形開催の東北大会に認められる開催県OPは別の参加区分です。OPのタイムを正式な県2〜4位校のタイムとして扱いません。 ' + f'[{rule_ref}]', '']
 lines += ['', '## 正式出場枠と山形の開催県追加枠', '', f'公式要項10参加資格⑵では女子は各県上位4チームで、県予選参加数が15チーム以上の県は1チーム追加できます。開催県山形については10⑻に「オープン参加を各1チーム認める」とあります。開催県の追加1チームと、参加数による正式枠の追加は別の規定です。 [{rule_ref}]', '', f'全国の地区代表は東北大会において実際の県代表校を除く最上位校1校です。今回はご指定どおり県2〜4位を比較の本体とし、開催県OPの実際の出場校や全国選考資格を未確認のまま確定扱いしていません。OPの扱いは主催者の正式発表・監督会議資料を確認する必要があります。 [{rule_ref}] [{national_ref}]']
 if extras:
     lines += ['', '|追加枠に関する参考|学校|県内順位|タイム|扱い|', '|---|---|---:|---|---|']
@@ -153,7 +183,7 @@ for pref in DATA:
     cells = []
     for rank in range(1, 5):
         team = next((t for t in pref['teams'] if t['rank'] == rank), None)
-        cells.append(f"{team['school']} {team['time'] or '記録未確認'}" if team else '未開催・未確定' if pref['status'] == 'scheduled' else '未確認')
+        cells.append(f"{team['school']} {team['time'] or '記録未確認'}" if team else '該当なし（正式順位なし）' if rank in pref.get('not_applicable_ranks', []) else '未開催・未確定' if pref['status'] == 'scheduled' else '未確認')
     source = pref['sources'][0]['url'] if not pref['teams'] else source_for(pref, next(t for t in pref['teams'] if t['rank'] == 2))[0]
     source_id = next(i for i, item in enumerate(refs, 1) if item['url'] == source)
     lines.append(f"|{pref['prefecture']} [{source_id}]|" + '|'.join(cells) + '|')
@@ -170,7 +200,9 @@ for row in rows:
     text.append(f"{row['reference_rank']:>2}位　{row['prefecture']}　{row['school']}　{row['time_jp']}　（県{row['prefecture_rank']}位）")
 for row in missing:
     text.append(f"参考順なし　{row['prefecture']}　{row['school']}　記録未確認　（県{row['prefecture_rank']}位）")
-text += ['', '未開催：青森県10/29、福島県10/31。両県2〜4位は未確定。', '', '追加枠：各県通常4チーム、県予選15チーム以上なら1チーム追加。山形の開催県追加1チームはOP参加枠。実際のOP出場校と全国選考資格は確定扱いしない。', '']
+for row in rank_exclusions:
+    text += ['', row['note']]
+text += ['', '青森10/29、福島10/31の開催結果を追加し、全6県を反映。' if not pending else '結果未確認の県は、参考順から除外。', '', '追加枠：各県通常4チーム、県予選15チーム以上なら1チーム追加。山形の開催県追加1チームはOP参加枠。実際のOP出場校と全国選考資格は確定扱いしない。', '']
 for row in extras:
     text.append(f"追加枠参考：{row['prefecture']} {row['school']} {row['time_jp']}（県5位）。{row['note']}")
 text += ['', '考察'] + summary + ['', '出典']
@@ -279,6 +311,8 @@ for pref in DATA:
         if team:
             url, level = source_for(pref, team)
             values.append([pref['prefecture'], rank, team['school'], sec(team['time']) / 86400 if team['time'] else '記録未確認', '対象外・県1位' if rank == 1 else '2〜4位対象', level, url, team['note']])
+        elif rank in pref.get('not_applicable_ranks', []):
+            values.append([pref['prefecture'], rank, '該当なし（正式順位なし）', None, '対象校なし', '公式結果PDF', pref['sources'][0]['url'], pref['rank_exclusion_note']])
         else:
             values.append([pref['prefecture'], rank, '未開催・未確定' if pref['status'] == 'scheduled' else '未確認', None, '結果確定待ち', '公式日程・要項', pref['sources'][0]['url'], pref['event_date'] + '開催予定' if pref['status'] == 'scheduled' else '今回未確認'])
 finish(ws, values, 'PrefecturalTopFour', time_cols=(4,), links=(7,))
@@ -297,6 +331,10 @@ for row in missing:
     values.append(['タイム未確認', row['prefecture'], row['school'], row['prefecture_rank'], '記録未確認', '参考順位には入れない。' + row['note'], row['source_url']])
 for row in pending:
     values.append(['未開催', row['prefecture'], '2〜4位は未確定', None, None, row['event_date'] + '開催予定。過年度の記録は代用しない。', next(p['sources'][0]['url'] for p in DATA if p['prefecture'] == row['prefecture'])])
+for row in rank_exclusions:
+    values.append(['正式順位なし', row['prefecture'], '3位・4位の対象校なし', None, None, row['note'], row['source_url']])
+for row in open_reference:
+    values.append(['県予選OP', row['prefecture'], row['school'], None, sec(row['time']) / 86400 if row['time'] else None, row['note'], row['source_url']])
 finish(ws, values, 'ExceptionsAndPending', time_cols=(5,), links=(7,))
 for r in range(6, ws.max_row + 1):
     ws.row_dimensions[r].height = max(48, min(120, ((len(str(ws.cell(r, 6).value)) + 34) // 35) * 14 + 8))

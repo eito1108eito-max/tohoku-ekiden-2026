@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026年10月24日 17時台（JST）",
+  "checked_at": "2026年10月31日更新（JST）",
   "ranked": [
     {
       "prefecture_id": "miyagi",
@@ -98,6 +98,38 @@
       "reference_id": 5
     },
     {
+      "prefecture_id": "fukushima",
+      "prefecture": "福島県",
+      "school": "ザベリオ",
+      "prefecture_rank": 2,
+      "time": "01:17:00",
+      "time_jp": "1時間17分00秒",
+      "seconds": 4620,
+      "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+      "evidence_level": "公式結果HTML",
+      "note": "福島陸協公式の女子総合成績による正式2位。東北大会出場。TUF記事中の「ザベリオ学園」ではなく、県公式結果のチーム表記を採用。",
+      "first_gap_seconds": 244,
+      "reference_rank": 7,
+      "leader_gap_seconds": 256,
+      "reference_id": 6
+    },
+    {
+      "prefecture_id": "fukushima",
+      "prefecture": "福島県",
+      "school": "いわき秀英",
+      "prefecture_rank": 3,
+      "time": "01:17:32",
+      "time_jp": "1時間17分32秒",
+      "seconds": 4652,
+      "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+      "evidence_level": "公式結果HTML",
+      "note": "福島陸協公式の女子総合成績による正式3位。東北大会出場。",
+      "first_gap_seconds": 276,
+      "reference_rank": 8,
+      "leader_gap_seconds": 288,
+      "reference_id": 6
+    },
+    {
       "prefecture_id": "yamagata",
       "prefecture": "山形県",
       "school": "酒田南",
@@ -109,9 +141,25 @@
       "evidence_level": "公式結果PDF",
       "note": "公式PDFにオープン参加の表示なし。",
       "first_gap_seconds": 390,
-      "reference_rank": 7,
+      "reference_rank": 9,
       "leader_gap_seconds": 308,
       "reference_id": 4
+    },
+    {
+      "prefecture_id": "fukushima",
+      "prefecture": "福島県",
+      "school": "日大東北",
+      "prefecture_rank": 4,
+      "time": "01:17:58",
+      "time_jp": "1時間17分58秒",
+      "seconds": 4678,
+      "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+      "evidence_level": "公式結果HTML",
+      "note": "福島陸協公式の女子総合成績による正式4位。東北大会出場。",
+      "first_gap_seconds": 302,
+      "reference_rank": 10,
+      "leader_gap_seconds": 314,
+      "reference_id": 6
     },
     {
       "prefecture_id": "yamagata",
@@ -125,7 +173,7 @@
       "evidence_level": "公式結果PDF",
       "note": "公式PDFにオープン参加の表示なし。",
       "first_gap_seconds": 481,
-      "reference_rank": 8,
+      "reference_rank": 11,
       "leader_gap_seconds": 399,
       "reference_id": 4
     },
@@ -141,9 +189,25 @@
       "evidence_level": "補助結果・2件照合",
       "note": "正式参加",
       "first_gap_seconds": 446,
-      "reference_rank": 9,
+      "reference_rank": 12,
       "leader_gap_seconds": 518,
-      "reference_id": 6
+      "reference_id": 7
+    },
+    {
+      "prefecture_id": "aomori",
+      "prefecture": "青森県",
+      "school": "八戸学院光星",
+      "prefecture_rank": 2,
+      "time": "01:21:55",
+      "time_jp": "1時間21分55秒",
+      "seconds": 4915,
+      "source_url": "http://www.jaafaomori.com/wp-content/uploads/2026/10/18978d96f4ce95907796596d78770523.pdf",
+      "evidence_level": "公式結果PDF",
+      "note": "公式順位2位。東北大会実施要項の『女子は各県上位4チーム』に照らし、青森の正式順位校として出場対象。",
+      "first_gap_seconds": 755,
+      "reference_rank": 13,
+      "leader_gap_seconds": 551,
+      "reference_id": 8
     },
     {
       "prefecture_id": "iwate",
@@ -157,9 +221,9 @@
       "evidence_level": "補助結果・2件照合",
       "note": "正式参加",
       "first_gap_seconds": 620,
-      "reference_rank": 10,
+      "reference_rank": 14,
       "leader_gap_seconds": 692,
-      "reference_id": 6
+      "reference_id": 7
     },
     {
       "prefecture_id": "iwate",
@@ -173,9 +237,9 @@
       "evidence_level": "補助結果・2件照合",
       "note": "正式参加",
       "first_gap_seconds": 641,
-      "reference_rank": 11,
+      "reference_rank": 15,
       "leader_gap_seconds": 713,
-      "reference_id": 6
+      "reference_id": 7
     }
   ],
   "unranked": [
@@ -194,18 +258,7 @@
       "reference_id": 5
     }
   ],
-  "pending": [
-    {
-      "prefecture": "青森県",
-      "event_date": "2026-10-29",
-      "note": "未開催。2〜4位の3枠は未確定"
-    },
-    {
-      "prefecture": "福島県",
-      "event_date": "2026-10-31",
-      "note": "未開催。2〜4位の3枠は未確定"
-    }
-  ],
+  "pending": [],
   "additional_reference": [
     {
       "prefecture": "宮城県",
@@ -226,6 +279,38 @@
       "source_url": "https://www.jaaf-yamagata.jp/taikai/2026/ken_h_ekiden_f.pdf",
       "note": "開催県OP枠の実際の出場校は未確定。この5位校が出場するとは断定しない。",
       "reference_id": 4
+    }
+  ],
+  "rank_exclusions": [
+    {
+      "prefecture": "青森県",
+      "ranks": [
+        3,
+        4
+      ],
+      "note": "正式順位は青森山田・八戸学院光星の2校のみ。青森山田Ｂ（01:14:37）と大湊・田名部（01:26:17）は公式OP・順位なしで、正式3位・4位は存在しません。OPを3位・4位として補完しません。",
+      "source_url": "http://www.jaafaomori.com/wp-content/uploads/2026/10/18978d96f4ce95907796596d78770523.pdf",
+      "reference_id": 8
+    }
+  ],
+  "open_reference": [
+    {
+      "prefecture": "青森県",
+      "school": "青森山田Ｂ",
+      "time": "01:14:37",
+      "time_jp": "1時間14分37秒",
+      "note": "県予選OP・正式順位なし。県2〜4位の参考順に含めない。",
+      "source_url": "http://www.jaafaomori.com/wp-content/uploads/2026/10/18978d96f4ce95907796596d78770523.pdf",
+      "reference_id": 8
+    },
+    {
+      "prefecture": "青森県",
+      "school": "大湊・田名部",
+      "time": "01:26:17",
+      "time_jp": "1時間26分17秒",
+      "note": "県予選OP・正式順位なし。県2〜4位の参考順に含めない。",
+      "source_url": "http://www.jaafaomori.com/wp-content/uploads/2026/10/18978d96f4ce95907796596d78770523.pdf",
+      "reference_id": 8
     }
   ],
   "references": [
@@ -250,16 +335,16 @@
       "title": "秋田県 2026年女子県高校駅伝の結果資料"
     },
     {
+      "url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+      "title": "福島県 2026年女子県高校駅伝の結果資料"
+    },
+    {
       "url": "https://blog.neet-shikakugets.com/iwate-koukou-ekiden-results",
       "title": "岩手県 2026年女子県高校駅伝の結果資料"
     },
     {
-      "url": "https://www.jaafaomori.com/schedule/",
-      "title": "青森県 2026年女子県高校駅伝の公式日程・要項"
-    },
-    {
-      "url": "https://gold.jaic.org/fukushima/joho/2026/20261031-1.pdf",
-      "title": "福島県 2026年女子県高校駅伝の公式日程・要項"
+      "url": "http://www.jaafaomori.com/wp-content/uploads/2026/10/18978d96f4ce95907796596d78770523.pdf",
+      "title": "青森県 2026年女子県高校駅伝の結果資料"
     },
     {
       "url": "https://www.sposoku.com/koukouekiden-iwate/",
@@ -272,10 +357,12 @@
   ],
   "analysis": [
     "確認済みの参考タイムでは、東北 1時間12分44秒、東北文教大学山形城北 1時間13分02秒が先頭で、差は18秒です。これは県大会の記録順で、東北大会の予想順位ではありません。",
+    "今回追加した青森県の2位は八戸学院光星で、1時間21分55秒、全体の参考順は13番目です。先頭の確認記録との差は551秒です。県代表の1位校はこの比較から除いています。",
+    "今回追加した福島県の2位はザベリオで、1時間17分00秒、全体の参考順は7番目です。先頭の確認記録との差は256秒です。県代表の1位校はこの比較から除いています。",
     "県3・4位校の中で最も速い確認記録は宮城県の聖和学園で、1時間15分23秒です。全体参考3番目に入るため、県2位だけの比較では対象校の見え方が変わります。",
     "秋田北鷹と秋田工業の差は15秒です。県3位の秋田工業も含め、当日のオーダーや区間ごとの走りで逆転し得る候補として見るのが適切です。",
     "宮城4位の古川学園と秋田2位の秋田北鷹の記録差は1秒です。県内順位が違っても総合記録は近く、県4位校を除くと比較から漏れる例です。",
     "山形県予選と東北大会は同じ長井市の会場名・周回コースで案内されていますが、区間設定や当日の条件を同一と決めつけることはできません。県間の総合タイムから勝率を算出したり、出場権の獲得を断定したりはしていません。",
-    "青森・福島の予選が終わるまでは全県の比較が完成していません。比較対象の県2〜4位校も、正式な東北大会出場名簿と実際の県代表校を確認してから全国地区代表の候補を確定します。"
+    "青森・福島を加え、全6県の予選結果を反映しました。県2〜4位の記録確認済み15校を比較し、タイム未確認1校は参考順から除外しています。出場権を争う最終対象校は、東北大会の正式出場名簿と実際の県代表校で確認してください。"
   ]
 }

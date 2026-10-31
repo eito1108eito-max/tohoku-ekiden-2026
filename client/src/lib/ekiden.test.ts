@@ -38,4 +38,24 @@ describe('県大会記録の表示と比較', () => {
     expect(comparison.additional_reference.every(row => row.prefecture_rank === 5)).toBe(true);
     expect(comparison.ranked.some(row => row.school === '明桜')).toBe(false);
   });
+  it('全6県を反映し、青森のOPを正式3位・4位にしない', () => {
+    expect(new Set(comparison.ranked.map(row => row.prefecture)).size).toBe(6);
+    expect(comparison.pending).toHaveLength(0);
+    const aomori = comparison.ranked.filter(row => row.prefecture_id === 'aomori');
+    expect(aomori.map(row => row.prefecture_rank)).toEqual([2]);
+    expect(aomori[0].school).toBe('八戸学院光星');
+    expect(aomori[0].time).toBe('01:21:55');
+    expect(comparison.rank_exclusions.find(row => row.prefecture === '青森県')?.ranks).toEqual([3, 4]);
+    expect(comparison.open_reference.some(row => row.school === '青森山田Ｂ')).toBe(true);
+    expect(comparison.ranked.some(row => row.school === '青森山田Ｂ')).toBe(false);
+  });
+  it('福島の正式2〜4位を公式結果の記録で反映する', () => {
+    const fukushima = comparison.ranked.filter(row => row.prefecture_id === 'fukushima');
+    expect(fukushima.map(row => [row.prefecture_rank, row.school, row.time])).toEqual([
+      [2, 'ザベリオ', '01:17:00'],
+      [3, 'いわき秀英', '01:17:32'],
+      [4, '日大東北', '01:17:58'],
+    ]);
+    expect(fukushima.every(row => row.evidence_level === '公式結果HTML')).toBe(true);
+  });
 });

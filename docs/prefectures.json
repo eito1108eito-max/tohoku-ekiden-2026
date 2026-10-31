@@ -2,18 +2,83 @@
   {
     "id": "aomori",
     "prefecture": "青森県",
-    "event_name": "第77回 男子・女子青森県高等学校駅伝競走大会",
+    "event_name": "第38回全国・第37回東北高校女子駅伝青森県予選会（2026年）",
     "event_date": "2026-10-29",
     "venue": "新青森県総合運動公園陸上競技場周辺コース",
-    "status": "scheduled",
+    "status": "verified_result",
     "distance_km": null,
-    "teams": [],
+    "teams": [
+      {
+        "rank": 1,
+        "school": "青森山田",
+        "time": "01:09:20",
+        "is_combined": false,
+        "note": "公式順位1位。公式PDFで大会新記録と表記。第38回全国・第37回東北高校女子駅伝県予選会の記録表。",
+        "source_url": "http://www.jaafaomori.com/wp-content/uploads/2026/10/18978d96f4ce95907796596d78770523.pdf",
+        "evidence_level": "公式結果PDF",
+        "school_raw": "青森山田高等学校"
+      },
+      {
+        "rank": 2,
+        "school": "八戸学院光星",
+        "time": "01:21:55",
+        "is_combined": false,
+        "note": "公式順位2位。東北大会実施要項の『女子は各県上位4チーム』に照らし、青森の正式順位校として出場対象。",
+        "source_url": "http://www.jaafaomori.com/wp-content/uploads/2026/10/18978d96f4ce95907796596d78770523.pdf",
+        "evidence_level": "公式結果PDF",
+        "school_raw": "八戸学院光星高等学校"
+      },
+      {
+        "rank": null,
+        "school": "青森山田Ｂ",
+        "time": "01:14:37",
+        "is_combined": false,
+        "note": "公式PDFで『open』。走破タイムは全体2番手だが、正式順位は付与されていない。",
+        "source_url": "http://www.jaafaomori.com/wp-content/uploads/2026/10/18978d96f4ce95907796596d78770523.pdf",
+        "evidence_level": "公式結果PDF",
+        "school_raw": "青森山田高等学校Ｂ"
+      },
+      {
+        "rank": null,
+        "school": "大湊・田名部",
+        "time": "01:26:17",
+        "is_combined": true,
+        "note": "公式PDFで『open』かつ2校の合同表記。正式順位は付与されていない。",
+        "source_url": "http://www.jaafaomori.com/wp-content/uploads/2026/10/18978d96f4ce95907796596d78770523.pdf",
+        "evidence_level": "公式結果PDF",
+        "school_raw": "大湊・田名部高等学校"
+      }
+    ],
     "sources": [
       {
-        "title": "青森陸上競技協会 2026競技日程・大会申込",
+        "title": "令和8年度青森県高等学校男子・女子駅伝競走大会 第38回全国・第37回東北高校女子駅伝県予選会 記録表",
+        "url": "http://www.jaafaomori.com/wp-content/uploads/2026/10/18978d96f4ce95907796596d78770523.pdf",
+        "type": "official_result_pdf",
+        "supports": "開催日2026/10/29、女子の正式1位・2位、全4チームの総合タイム、青森山田Bと大湊・田名部のopen表記、および合同表記。"
+      },
+      {
+        "title": "2026 青森陸上競技協会 競技日程",
         "url": "https://www.jaafaomori.com/schedule/",
-        "type": "official_schedule_page",
-        "supports": "2026年10月29日に県高校駅伝を新青森県営周辺コースで開催予定と掲載。大会行には派遣依頼等の関連資料がある一方、結果リンクは未掲載。"
+        "type": "official_schedule_html",
+        "supports": "県高校駅伝を2026年10月29日、新青森県総合運動公園周辺コースで予定していたこと。公式結果PDFの日付と開催地で実施を確認。"
+      },
+      {
+        "title": "第37回東北高等学校女子駅伝競走大会・第62回東北高等学校駅伝競走大会 実施要項",
+        "url": "https://www.jaaf-yamagata.jp/touhoku_h_ekiden/data/01.pdf",
+        "type": "official_guidelines_pdf",
+        "supports": "女子は各県上位4チーム、県予選参加数15チーム以上なら1チーム追加。青森県を含む申込締切は2026年11月2日12時。学校対抗で、開催県以外のOP追加規定はない。"
+      },
+      {
+        "title": "青森山田が優勝 34年連続34回目の都大路 高校駅伝・青森女子",
+        "url": "https://mainichi.jp/articles/20261029/k00/00m/050/056000c",
+        "type": "news",
+        "supports": "10月29日に青森市で女子県予選が開催され、4チーム出場、青森山田が優勝して全国出場を決めたことの独立確認。"
+      },
+      {
+        "title": "青森県高校駅伝 2026 結果・速報 リザルト",
+        "url": "https://blog.neet-shikakugets.com/aomori-koukou-ekiden-men-results",
+        "type": "results_aggregator",
+        "supports": "女子4チームのタイム、青森山田B・大湊・田名部のOP表記が公式PDFと一致することの二次照合。"
       },
       {
         "title": "第77回 男子・女子青森県高等学校駅伝競走大会 派遣依頼",
@@ -34,16 +99,31 @@
         "supports": "確認時点の公式記録速報ページは10月3日〜4日の県中学校新人陸上を表示しており、県高校駅伝の速報・結果は未掲載。"
       }
     ],
-    "summary": "2026年10月24日16時台JST現在、女子県予選は公式日程上2026年10月29日開催予定で未開催。したがって2026年度の女子全順位、1位・2位の学校名・タイム、合同・オープン区分は未公表であり、teamsは空配列とした。",
+    "summary": "実際の開催日は2026-10-29。女子は4チームが出走し、正式順位は1位・青森山田01:09:20、2位・八戸学院光星01:21:55のみである。青森山田B（01:14:37）と大湊・田名部（01:26:17）は公式にopenで、後者は合同チームであるため、正式3位・4位・5位は存在しない。東北大会要項は女子を各県上位4チーム（県予選15チーム以上なら追加1）と定めるため、正式順位の青森山田・八戸学院光星が規定上の青森出場対象となる。",
     "caveats": [
-      "過年度の順位・記録は2026年度結果として使用していない。",
-      "女子のコース総距離・区間距離は確認した2026年度公式日程、派遣依頼、所属長宛文書に記載がないためnullとした。全国大会の標準距離や過年度コースから推測していない。",
-      "公式の独立した競技要項URLは確認できなかった。日程ページに掲載された派遣依頼PDFは役員派遣文書であり、要項とは区別した。",
-      "2026年10月24日16時台JSTの公式日程ページでは県高校駅伝の結果URLは未掲載。"
+      "2026-10-31 20:50 JST時点で、東北大会主催サイトには学校名入りの最終エントリー一覧・出場校一覧は掲載されていない。青森県を含む参加申込締切は2026-11-02 12:00である。qualified_schoolsは、公式県予選順位と公式要項から確定する出場対象校であり、別途掲載された名簿の転記ではない。",
+      "女子の県予選参加数は公式結果表と当日報道の双方で4チーム。15チーム以上の場合の追加1チーム枠は発動しないため、extra_qualifier_confirmedはfalseとした。",
+      "青森山田Bと大湊・田名部は走破タイムを持つが、公式記録表がopenと明記するため正式順位を付けていない。県代表1位を除く東北6県の参考タイム比較に使える青森の正式順位タイムは2位の八戸学院光星のみで、3位・4位をOPから補完してはならない。",
+      "5位の正式出場確定を支持する根拠はない。公式結果には女子の5位チーム自体が存在しない。"
     ],
     "report_path": "/home/ubuntu/research/aomori.md",
     "json_path": "/home/ubuntu/research/aomori.json",
-    "is_partial_result": false
+    "is_partial_result": false,
+    "checked_at": "2026-10-31T20:50:00+09:00",
+    "participation": {
+      "girls_count": 4,
+      "extra_qualifier_confirmed": false,
+      "qualified_schools": [
+        "青森山田",
+        "八戸学院光星"
+      ],
+      "note": "女子4チーム（正式順位2校＋OP2チーム）。15チーム以上の追加枠は生じない。東北大会の最終エントリー一覧は確認時点で未掲載、参加申込締切は11月2日12:00。"
+    },
+    "not_applicable_ranks": [
+      3,
+      4
+    ],
+    "rank_exclusion_note": "正式順位は青森山田・八戸学院光星の2校のみ。青森山田Ｂ（01:14:37）と大湊・田名部（01:26:17）は公式OP・順位なしで、正式3位・4位は存在しません。OPを3位・4位として補完しません。"
   },
   {
     "id": "iwate",
@@ -388,7 +468,8 @@
       "秋田さきがけ記事は有料会員限定で、公開部分には各チームの詳細記録が表示されない。",
       "2025年の明桜女子総合タイム（01:15:32）は別年度・別順位であり、本データには代用していない。",
       "秋田工業の学校名は結果表の『秋田工高』を、指定の既存表記に合わせて『秋田工業』に正規化した。",
-      "5〜6位のタイム、7位以下、合同・OPの実際の参加区分は未確認。"
+      "5〜6位のタイム、7位以下、合同・OPの実際の参加区分は未確認。",
+      "10月31日の追加確認でも県高体連・陸協公開ページと結果速報に明桜の2026年総合タイムを確認できないため、4位のtimeはnullを維持した。"
     ],
     "report_path": "/home/ubuntu/research/akita.md",
     "json_path": "/home/ubuntu/research/akita.json",
@@ -510,18 +591,159 @@
   {
     "id": "fukushima",
     "prefecture": "福島県",
-    "event_name": "第44回福島県高等学校女子駅伝競走大会（令和8年度）",
+    "event_name": "第44回福島県高等学校女子駅伝競走大会（2026年）",
     "event_date": "2026-10-31",
     "venue": "猪苗代町総合体育館（カメリーナ）付設女子駅伝コース（同館発着の折り返しコース）",
-    "status": "scheduled",
+    "status": "verified_result",
     "distance_km": 21.0975,
-    "teams": [],
+    "teams": [
+      {
+        "rank": 1,
+        "school": "学法石川",
+        "time": "01:12:56",
+        "is_combined": false,
+        "note": "福島陸協公式の女子総合成績による正式1位。東北大会出場（TUF当日報道は女子上位4チームの出場を明記）。",
+        "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "evidence_level": "公式結果HTML",
+        "school_raw": "学法石川高"
+      },
+      {
+        "rank": 2,
+        "school": "ザベリオ",
+        "time": "01:17:00",
+        "is_combined": false,
+        "note": "福島陸協公式の女子総合成績による正式2位。東北大会出場。TUF記事中の「ザベリオ学園」ではなく、県公式結果のチーム表記を採用。",
+        "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "evidence_level": "公式結果HTML",
+        "school_raw": "ザベリオ高"
+      },
+      {
+        "rank": 3,
+        "school": "いわき秀英",
+        "time": "01:17:32",
+        "is_combined": false,
+        "note": "福島陸協公式の女子総合成績による正式3位。東北大会出場。",
+        "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "evidence_level": "公式結果HTML",
+        "school_raw": "いわき秀英高"
+      },
+      {
+        "rank": 4,
+        "school": "日大東北",
+        "time": "01:17:58",
+        "is_combined": false,
+        "note": "福島陸協公式の女子総合成績による正式4位。東北大会出場。",
+        "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "evidence_level": "公式結果HTML",
+        "school_raw": "日大東北高"
+      },
+      {
+        "rank": 5,
+        "school": "安積黎明",
+        "time": "01:25:20",
+        "is_combined": false,
+        "note": "福島陸協公式の正式5位。女子は連合を含め11チームで、東北大会の追加枠が生じる15チーム以上に達しないため、東北出場校には含めない。",
+        "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "evidence_level": "公式結果HTML",
+        "school_raw": "安積黎明高"
+      },
+      {
+        "rank": 6,
+        "school": "帝京安積",
+        "time": "01:27:42",
+        "is_combined": false,
+        "note": "福島陸協公式の正式6位。東北出場枠外。",
+        "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "evidence_level": "公式結果HTML",
+        "school_raw": "帝京安積高"
+      },
+      {
+        "rank": 7,
+        "school": "郡山女大附",
+        "time": "01:37:11",
+        "is_combined": false,
+        "note": "福島陸協公式の正式7位。東北出場枠外。",
+        "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "evidence_level": "公式結果HTML",
+        "school_raw": "郡山女大附高"
+      },
+      {
+        "rank": null,
+        "school": "県南連合Ｂ",
+        "time": "01:28:24",
+        "is_combined": true,
+        "note": "公式結果・公式エントリー一覧で「OPN:オープン参加」かつ連合チームと表示。順位外。",
+        "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "evidence_level": "公式結果HTML",
+        "school_raw": "県南連合Ｂ"
+      },
+      {
+        "rank": null,
+        "school": "県北連合Ａ",
+        "time": "01:28:32",
+        "is_combined": true,
+        "note": "公式結果・公式エントリー一覧で「OPN:オープン参加」かつ連合チームと表示。順位外。",
+        "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "evidence_level": "公式結果HTML",
+        "school_raw": "県北連合Ａ"
+      },
+      {
+        "rank": null,
+        "school": "県南連合Ａ",
+        "time": "01:29:19",
+        "is_combined": true,
+        "note": "公式結果・公式エントリー一覧で「OPN:オープン参加」かつ連合チームと表示。順位外。",
+        "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "evidence_level": "公式結果HTML",
+        "school_raw": "県南連合Ａ"
+      },
+      {
+        "rank": null,
+        "school": "県北連合Ｂ",
+        "time": "01:33:43",
+        "is_combined": true,
+        "note": "公式結果・公式エントリー一覧で「OPN:オープン参加」かつ連合チームと表示。順位外。",
+        "source_url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "evidence_level": "公式結果HTML",
+        "school_raw": "県北連合Ｂ"
+      }
+    ],
     "sources": [
       {
-        "title": "福島県高等学校駅伝競走大会 実施要項",
+        "title": "福島陸協：女子駅伝総合成績（第44回福島県高等学校女子駅伝競走大会）",
+        "url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel002.html",
+        "type": "official_results_html",
+        "supports": "2026年10月31日12時30分開催、正式順位1〜7位と総合タイム、4連合チームのOPN（オープン参加）・順位外表示。2026/10/31 14:04:12更新。"
+      },
+      {
+        "title": "福島陸協：女子駅伝エントリー・リスト",
+        "url": "https://gold.jaic.org/fukushima/kekka/2026/1031/rel00200.html",
+        "type": "official_entry_list_html",
+        "supports": "女子のエントリーはNo.1〜11。No.8〜11の県北連合A・B、県南連合A・BはOPNと明示され、単独校7チームと区分できる。"
+      },
+      {
+        "title": "福島陸協：令和8年度福島県高等学校駅伝競走大会要項",
         "url": "https://gold.jaic.org/fukushima/joho/2026/20261031-1.pdf",
-        "type": "official PDF",
-        "supports": "福島陸上競技協会が公開する要項本文。女子第44回大会の開催日（2026-10-31）、会場、女子21.0975km・5区間、合同・オープン参加規定、全国・東北大会の出場規定を確認した。"
+        "type": "official_guidelines_pdf",
+        "supports": "期日は2026年10月31日。女子は5区間。東北大会は4位まで、参加15チーム以上の場合のみ5位まで。OPNは順位に含まれず、合同チーム参加可と規定。"
+      },
+      {
+        "title": "東北高等学校駅伝競走大会：第37回女子大会実施要項",
+        "url": "https://www.jaaf-yamagata.jp/touhoku_h_ekiden/data/01.pdf",
+        "type": "official_regional_guidelines_pdf",
+        "supports": "女子は各県上位4チーム、予選会参加数15チーム以上の県のみ1チーム追加と明記。2026年11月14日開催。"
+      },
+      {
+        "title": "TUF：福島県高校駅伝 学法石川が男女で優勝",
+        "url": "https://newsdig.tbs.co.jp/articles/tuf/3053377?display=1",
+        "type": "same_day_local_news",
+        "supports": "女子は連合チームを含む11チームが出場し、2位ザベリオ、3位いわき秀英、4位日大東北、女子上位4チームが東北大会に出場すると報道。"
+      },
+      {
+        "title": "東北高等学校駅伝競走大会公式連絡サイト",
+        "url": "https://www.jaaf-yamagata.jp/touhoku_h_ekiden/index.html",
+        "type": "official_regional_site",
+        "supports": "2026年10月31日20時台の確認時点では要項・申込書等を掲載しているが、学校名入りの出場校名簿は掲載されていない。"
       },
       {
         "title": "福島陸上競技協会 高体連関係",
@@ -530,15 +752,25 @@
         "supports": "2026年の第71回・第44回福島県高校駅伝の公式掲載欄を確認した。2026-10-24時点では要項等7資料のみで、当該大会の個別結果リンクは未掲載である。"
       }
     ],
-    "summary": "2026-10-24 16時台JST時点で、福島県の女子県予選は2026-10-31開催予定で未開催。公式要項本文で女子21.0975km・5区間、猪苗代町総合体育館（カメリーナ）発着を確認した。公式順位、学校名、タイム、合同・オープン参加実績は未発表のため掲載しない。",
+    "summary": "第44回福島県高等学校女子駅伝競走大会は予定どおり2026年10月31日に猪苗代町総合体育館で開催され、県公式結果は14時04分に更新済み。正式上位4校は学法石川（01:12:56）、ザベリオ（01:17:00）、いわき秀英（01:17:32）、日大東北（01:17:58）。県代表1位を除く東北比較用タイムは、2位ザベリオ01:17:00、3位いわき秀英01:17:32、4位日大東北01:17:58である。女子は連合を含む11チームで、県公式は7校を順位付き、4連合をOPN・順位外として掲載。東北大会の公式要項・福島県要項はともに15チーム以上の場合のみ5位に追加枠を認めるため、5位安積黎明は対象外。TUFの当日報道も女子上位4チームの東北大会出場を明記している。",
     "caveats": [
-      "現在時点は大会予定日の7日前であり、2025年以前の結果を2026年結果として扱っていない。",
-      "福島陸協の高体連関係ページは当該大会の公式掲載元だが、2026-10-24時点では個別の結果PDF／結果リンクは未掲載。",
-      "要項上、合同チームは参加可能、オープン参加は順位・区間賞の対象外。ただし実際の参加区分は未開催のため未確認。",
-      "要項上、全国大会は優勝校、東北大会は原則4位まで（参加15校以上なら5位まで）が対象である。地区代表枠は各県優勝校を除く最上位校であり、2位だけを自動的な対象とは扱えない。"
+      "東北大会の公式連絡サイトには確認時点で学校名入りの最終エントリー一覧が未掲載だった。出場校は、福島県公式順位、県・東北大会の公式出場枠規定、当日TUF報道の『上位4チームが出場』の明示を相互照合して確定した。",
+      "OPNの4連合は公式で順位外のためrankをnullとし、順位付き7校とは比較対象にしていない。"
     ],
     "report_path": "/home/ubuntu/research/fukushima.md",
     "json_path": "/home/ubuntu/research/fukushima.json",
-    "is_partial_result": false
+    "is_partial_result": false,
+    "checked_at": "2026-10-31T20:53:27+09:00",
+    "participation": {
+      "girls_count": 11,
+      "extra_qualifier_confirmed": false,
+      "qualified_schools": [
+        "学法石川",
+        "ザベリオ",
+        "いわき秀英",
+        "日大東北"
+      ],
+      "note": "TUF当日報道は女子『連合チームを含む11チーム』と明記。県公式エントリーは単独校7チーム（No.1〜7）とOPNの連合4チーム（No.8〜11）を表示する。東北大会公式要項10(2)は女子各県上位4チーム、予選会15チーム以上の県だけ1チーム追加。したがって福島に5位追加枠はなく、TUF記事が上位4チームの出場を明記している。"
+    }
   }
 ]

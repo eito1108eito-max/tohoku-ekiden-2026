@@ -2,13 +2,13 @@
 
 東北6県の2026年女子県高校駅伝について、確認できた順位・高校名・総合記録と資料リンクを掲載するサイトです。県2〜4位校を参考タイム順に比較できますが、県ごとの条件が異なるため東北大会の予想順位ではありません。東北大会の地区代表枠は県2位校限定ではなく、実際の県代表校を除く最上位校1校が対象です。
 
-調査基準日は2026年10月24日。公式資料と補助的な報道・結果速報を区別し、青森・福島の未開催結果は推測していません。このサイトは大会主催者の公式サイトではなく、自動更新もしません。
+調査更新日は2026年10月31日。青森10月29日・福島10月31日の公式結果を追加し、全6県を反映しました。青森の正式順位は2校のみで、OPの2チームを3位・4位として扱いません。秋田4位のタイム未確認を含め、公式資料と補助資料を区別します。このサイトは大会主催者の公式サイトではなく、自動更新もしません。
 
 ## GitHub Pagesで公開
 
-リポジトリは所有者の承認に基づいてPublicに変更済みです。公開用ファイルはmainの `docs/` に用意してあります。サイトの公開には、以下のPages有効化が必要です。
+リポジトリは所有者の承認に基づいてPublicに変更済みです。公開用ファイルはmainの `docs/` に生成しています。
 
-公開予定URLは `https://eito1108eito-max.github.io/tohoku-ekiden-2026/` です。Pagesの公開設定とデプロイが完了するまで、このURLで閲覧できるとは限りません。
+公開URLは https://eito1108eito-max.github.io/tohoku-ekiden-2026/ です。サイトと比較表、Excel・テキスト・CSVを共有できます。
 
 GitHubのリポジトリ設定で **Settings → Pages** を開きます。**Source** は **Deploy from a branch**、**Branch** は **main**、フォルダは **/docs** を選び、**Save** を押してください。生成済みの `docs/index.html` を公開するため、ユーザー作成のGitHub ActionsワークフローやNode.jsのサーバーは不要です。GitHub側の内部デプロイ処理で公開されます。
 
@@ -22,9 +22,9 @@ Pages設定の「Visit site」に公開URLが表示されたら公開先を確�
 
 ```sh
 pnpm install --frozen-lockfile
+python3 scripts/build-comparison.py
 pnpm check
 pnpm test
-python3 scripts/build-comparison.py
 pnpm build:pages
 git add client docs
 git commit -m "Update verified prefectural results"
